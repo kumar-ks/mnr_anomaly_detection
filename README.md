@@ -1,2 +1,1 @@
-# mnr_anomaly_detection
-Maintenance and Repair Anomaly Detection
+# Innovation.MR.Anomaly

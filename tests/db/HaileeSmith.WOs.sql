@@ -1,0 +1,34 @@
+-- SELECT
+-- 	CAST(a.workorder_date AS DATE) AS workorder_date,
+-- 	a.create_date AS submit_date,
+-- 	DATEDIFF(DAY, CAST(a.workorder_date AS DATE), a.create_date) AS days_difference,
+-- 	a.workorder_no,
+-- 	a.repairCode,
+-- 	a.vendor_est_no,
+-- 	a.unit_no,
+--     a.unique_repair_id,
+-- 	a.shop_code,
+-- 	a.shopName,
+-- 	a.IMRS_Status,
+-- 	a.workorder_labor,
+-- 	a.workorder_parts,
+--     --a.straight_hours,
+--     --a.overtime_hours,
+-- 	a.doubletime_hours,
+--     a.man_hours AS total_repair_hours,
+--     a.RepairTypeCode,
+--     a.cdx_damage,
+--     a.cdx_location,
+--     a.damage_description,
+-- 	a.reject_msg_vendor
+-- FROM 
+--     [IMRS].[dbo].[vw_WoWorkorderLineItemsCombined] a
+-- WHERE 
+--     a.workorder_date >= '2024-01-01'
+--     AND a.workorder_total > 0
+--     --AND (a.straight_hours + a.overtime_hours) > 0
+--     AND a.repairCode IN ('KMR', 'KAM', 'KAD', 'KBK', 'KCH', 'KAS', 'KDP', 'KEX',
+--                        'KFS', 'KTP', 'MSN', 'SVC', 'ZZZ', 'MGP')
+-- ORDER BY a.workorder_date ASC
+
+SELECT TOP 50 * FROM [IMRS].[dbo].[vw_WoWorkorderLineItemsCombined]
