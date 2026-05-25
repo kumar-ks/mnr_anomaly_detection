@@ -90,11 +90,11 @@ The system uses environment variables for flexible configuration:
 
 Training Configuration:
 
-TRAINING_IMAGE_URI: 775023821616.dkr.ecr.us-east-2.amazonaws.com/innovation.mr.anomaly.training.ecr:latest
+TRAINING_IMAGE_URI: xxxx.dkr.ecr.us-east-2.amazonaws.com/innovation.mr.anomaly.training.ecr:latest
 
-INFERENCE_IMAGE_URI: 775023821616.dkr.ecr.us-east-2.amazonaws.com/innovation.mr.anomaly.inference.ecr:latest
+INFERENCE_IMAGE_URI: xxxxx.dkr.ecr.us-east-2.amazonaws.com/innovation.mr.anomaly.inference.ecr:latest
 
-SAGEMAKER_ROLE_ARN: arn:aws:iam::775023821616:role/Innovation.MR.Anomaly.Sagemaker.Role
+SAGEMAKER_ROLE_ARN: arn:aws:iam::xxxx:role/Innovation.MR.Anomaly.Sagemaker.Role
 
 TRAINING_DATA_S3_URI: s3://innovation.mr.anomaly/data/input/monthly/
 
